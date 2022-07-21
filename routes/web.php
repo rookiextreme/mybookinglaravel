@@ -18,11 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', [HomeController::class, 'muka_page'])
-                ->name('hahaha');
-//home
-Route::get('/index', function () {
-    return view('index');
-})->middleware(['auth'])->name('index');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+// Route::get('/form', [HomeController::class, 'form']);
+
+Route::get('/form', function () {
+    return view('form');
+});
 
 require __DIR__.'/auth.php';
