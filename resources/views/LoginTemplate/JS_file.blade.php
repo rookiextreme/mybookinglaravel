@@ -1,4 +1,4 @@
-@extends('LoginView')
+@extends('login')
 @section('VendorJS')
 	<!-- BEGIN: Vendor JS-->
     <script src="{{asset('app-assets/vendors/js/vendors.min.js')}}"></script>

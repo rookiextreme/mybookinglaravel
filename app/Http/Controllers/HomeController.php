@@ -28,6 +28,5 @@ class HomeController extends Controller
 
 	public function muka_page(){
 		return view('index');
-	} 
-	 
+	}
 }
