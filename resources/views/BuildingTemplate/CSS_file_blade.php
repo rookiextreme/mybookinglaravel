@@ -1,4 +1,4 @@
-@extends('form')
+@extends('building')
 @section('VendorCSS')
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('template/app-assets/vendors/css/vendors.min.css')}}">

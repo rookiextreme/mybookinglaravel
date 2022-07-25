@@ -30,8 +30,15 @@ class HomeController extends Controller
 		return view('index');
 	}
 
-    public function form(){
-        return view('form');
-    }  
-	 
+    public function bilik(){
+        return view('room');
+    }
+
+    public function lokasi(){
+        return view('location');
+    }
+
+    public function bangunan(){
+        return view('building');
+    }
 }

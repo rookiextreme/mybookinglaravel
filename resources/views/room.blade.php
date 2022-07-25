@@ -9,9 +9,9 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>My Booking</title>
+    <title>Form Layouts - Vuexy - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon"  href="{{ URL::to('/assets/img/jkr.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
 </head>
@@ -950,7 +950,7 @@
                                     <h4 class="card-title">Tambah Bilik</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form class="form form-vertical">
+                                    <form class="form form-vertical" action="{{ route('room') }}" method="POST">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="mb-1">
@@ -1021,6 +1021,7 @@
                                             <div class="col-12">
                                                 <button type="reset" class="btn btn-primary me-1">Simpan</button>
                                                 <button type="reset" class="btn btn-outline-secondary">Padam</button>
+                                            </div>
                                             </div>
                                         </div>
                                     </form>
@@ -1151,7 +1152,6 @@
                     </div>
                 </section> -->
                 <!-- Basic Floating Label Form section end -->
-
             </div>
         </div>
     </div>
@@ -1160,7 +1160,12 @@
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span><span class="float-md-end d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
     @yield('VendorJS')
     
     @yield('PageVendorJS')

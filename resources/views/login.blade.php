@@ -103,17 +103,13 @@
                                             <label class="form-check-label" for="remember-me"> Remember Me</label>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary w-100" tabindex="4">Log Masuk</button><br>           
-                                    
-                                       
+                                    <button class="btn btn-primary w-100" tabindex="4">Log Masuk</button>
 
                                 </form>
                                 <p class="text-center mt-2"><span>New on our platform?</span><a href="auth-register-cover.html"><span>&nbsp;Create an account</span></a></p>
                                 <div class="divider my-2">
                                     <div class="divider-text">or</div>
                                 </div>
-
-                                
 
                                <!-- Load Facebook SDK for JavaScript -->
                                     <div id="fb-root"></div>
