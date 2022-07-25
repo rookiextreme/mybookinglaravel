@@ -28,6 +28,17 @@ class HomeController extends Controller
 
 	public function muka_page(){
 		return view('index');
-	} 
-	 
+	}
+
+    public function bilik(){
+        return view('room');
+    }
+
+    public function lokasi(){
+        return view('location');
+    }
+
+    public function bangunan(){
+        return view('building');
+    }
 }
