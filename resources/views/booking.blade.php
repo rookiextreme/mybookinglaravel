@@ -356,7 +356,7 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Utama</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="dashboard-analytics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Analytics</span></a>
                         </li>
@@ -366,7 +366,7 @@
                 </li>
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i data-feather="more-horizontal"></i>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="book.php"><i data-feather="book"></i><span class="menu-title text-truncate" data-i18n="book">Tempahan</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="book"><i data-feather="book"></i><span class="menu-title text-truncate" data-i18n="book">Tempahan</span></a>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Bilik</span></a>
                 </li>
@@ -379,11 +379,20 @@
                 <li class=" nav-item"><a class="d-flex align-items-center" href="profile.php"><i data-feather="profile"></i><span class="profile" data-i18n="profile">Profile</span></a>
                 </li>
                 
-
                 
- 
-             
+                
                
+                    </ul>
+              
+                    </ul>
+                </li>
+            
+                    </ul>
+                </li>
+                
+                
+                
+            
             </ul>
         </div>
     </div>
@@ -398,8 +407,8 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Bangunan</h2>
-                            
+                            <h2 class="content-header-title float-start mb-0">Tempahan</h2>
+                           
                         </div>
                     </div>
                 </div>
@@ -568,43 +577,71 @@
                         <div class="col-md-6 col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Tambah Bangunan</h4>
+                                    <h4 class="card-title">Tambah Tempahan</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form class="form form-vertical" action="{{ route('building') }}" method="POST">
+                                    <form class="form form-vertical" action="{{ route('booking') }}" method="POST">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="mb-1">
-                                                    <label class="form-label" for="first-name-vertical">Nama Bangunan</label>
-                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Bangunan" />
+                                                    <label class="form-label" for="first-name-vertical">Nama Mesyuarat</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Mesyuarat" />
                                                 </div>
                                             </div>
-                                            <!-- <div class="col-12">
-                                                <div class="mb-1">
-                                                    <label class="form-label" for="email-id-vertical">Aras / Tingkat</label>
-                                                    <input type="email" id="email-id-vertical" class="form-control" name="email-id" placeholder="Aras / Tingkat" />
-                                                </div>
-                                            </div> -->
-                                            <!-- <div class="col-12">
-                                                <div class="mb-1">
-                                                    <label class="form-label" for="contact-info-vertical">Kapasiti Bilik</label>
-                                                    <input type="number" id="contact-info-vertical" class="form-control" name="contact" placeholder="Kapasiti Bilik" />
-                                                </div>
-                                            </div> -->
-                                            <!-- <div class="col-12">
-                                                <div class="mb-1">
-                                                    <label class="form-label" for="first-name-vertical">Fasiliti / Kemudahan</label>
-                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Fasiliti / Kemudahan" />
-                                                </div>
-                                            </div> -->
-                                            <!-- <div class="col-12">
-                                                <div class="mb-1">
-                                                    <label class="form-label" for="first-name-vertical">Penerangan</label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Penerangan"></textarea>
-                                                </div>
-                                            </div> -->
                                             <div class="col-12">
-                                               <!--  <div class="mb-1">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Nama Urusetia</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Urusetia" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">IC Urusetia</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="IC Urusetia" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="col-md-6 mb-1">
+                                                    <label class="form-label" for="fp-date-time">Tarikh & Masa Mula</label>
+                                                    <input type="text" id="fp-date-time" class="form-control flatpickr-date-time" placeholder="YYYY-MM-DD HH:MM" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="col-md-6 mb-1">
+                                                    <label class="form-label" for="fp-date-time">Tarikh & Masa Akhir</label>
+                                                    <input type="text" id="fp-date-time" class="form-control flatpickr-date-time" placeholder="YYYY-MM-DD HH:MM" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Nama Pegawai</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Pegawai" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="email-id-vertical">Bilangan Pegawai Agensi</label>
+                                                    <div class="input-group">
+                                                    <input type="number" class="touchspin-icon" value="0" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="email-id-vertical">Bilangan Pegawai Luar</label>
+                                                    <div class="input-group">
+                                                    <input type="number" class="touchspin-icon" value="0" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Catatan</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Catatan"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <!-- <div class="mb-1">
                                                     <label class="form-label" for="first-name-vertical">Status</label>
                                                     <div class="row">
                                                     <div class="col-12">
@@ -624,7 +661,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                </div>  -->       
+                                                </div> -->        
                                             <!-- <div class="col-12">
                                                 <div class="mb-1">
                                                     <label class="form-label" for="password-vertical">Password</label>
@@ -781,9 +818,7 @@
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-    <!-- BEGIN: Footer-->
-   
-    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+
     <!-- END: Footer-->
     @yield('VendorJS')
     

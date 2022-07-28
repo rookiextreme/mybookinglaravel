@@ -27,7 +27,7 @@ class HomeController extends Controller
 	} 
 
 	public function muka_page(){
-		return view('index');
+		return view('dashboard');
 	}
 
     public function bilik(){
@@ -40,5 +40,9 @@ class HomeController extends Controller
 
     public function bangunan(){
         return view('building');
+    }
+
+    public function Kalendar(){
+        return view('calendar');
     }
 }

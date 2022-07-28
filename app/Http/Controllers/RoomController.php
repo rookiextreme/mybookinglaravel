@@ -23,7 +23,7 @@ class RoomController extends Controller
      */
     public function create()
     {
-        return view('room');
+        return view('RoomTemplate.CSS_file');
     }
 
     /**
@@ -56,8 +56,9 @@ class RoomController extends Controller
      */
     public function edit($id)
     {
-        //
+        echo $id;
     }
+
 
     /**
      * Update the specified resource in storage.
