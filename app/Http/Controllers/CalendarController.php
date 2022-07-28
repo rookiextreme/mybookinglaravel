@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LocationController extends Controller
+class CalendarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,7 +23,7 @@ class LocationController extends Controller
      */
     public function create()
     {
-        return view('LocationTemplate.CSS_file');
+        return view('CalendarTemplate.CSS_file');
     }
 
     /**
@@ -43,10 +43,9 @@ class LocationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    //public function show($id)
-    public function show()
+    public function show($id)
     {
-        return view('LocationTemplate.CSS_file');
+        //
     }
 
     /**

@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>App calendar - Vuexy - Bootstrap HTML admin template</title>
+    <title>Layout Empty - Vuexy - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -371,7 +371,7 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="app-todo.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Todo">Todo</span></a>
                 </li>
-                <li class="active nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Calendar</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Calendar</span></a>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Kanban</span></a>
                 </li>
@@ -663,7 +663,7 @@
                         </li>
                         <li><a class="d-flex align-items-center" href="layout-without-menu.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Without Menu">Without Menu</span></a>
                         </li>
-                        <li><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Layout Empty">Layout Empty</span></a>
+                        <li class="active"><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Layout Empty">Layout Empty</span></a>
                         </li>
                         <li><a class="d-flex align-items-center" href="layout-blank.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Layout Blank">Layout Blank</span></a>
                         </li>
@@ -764,145 +764,44 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper container-xxl p-0">
             <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">SENARAI LOKASI</h2>
+                            <div class="breadcrumb-wrapper">
+                                <!-- <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Layouts</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Layout Empty
+                                    </li>
+                                </ol> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
+                    <div class="mb-1 breadcrumb-right">
+                        <div class="dropdown">
+                            <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="grid"></i></button>
+                            <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="app-todo.html"><i class="me-1" data-feather="check-square"></i><span class="align-middle">Todo</span></a><a class="dropdown-item" href="app-chat.html"><i class="me-1" data-feather="message-square"></i><span class="align-middle">Chat</span></a><a class="dropdown-item" href="app-email.html"><i class="me-1" data-feather="mail"></i><span class="align-middle">Email</span></a><a class="dropdown-item" href="app-calendar.html"><i class="me-1" data-feather="calendar"></i><span class="align-middle">Calendar</span></a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content-body">
-                <!-- Full calendar start -->
-                <section>
-                    <div class="app-calendar overflow-hidden border">
-                        <div class="row g-0">
-                            <!-- Sidebar -->
-                            <div class="col app-calendar-sidebar flex-grow-0 overflow-hidden d-flex flex-column" id="app-calendar-sidebar">
-                                <div class="sidebar-wrapper">
-                                    <div class="card-body d-flex justify-content-center">
-                                        <button class="btn btn-primary btn-toggle-sidebar w-100" data-bs-toggle="modal" data-bs-target="#add-new-sidebar">
-                                            <span class="align-middle">Add Event</span>
-                                        </button>
-                                    </div>
-                                    <div class="card-body pb-0">
-                                        <h5 class="section-label mb-1">
-                                            <span class="align-middle">Filter</span>
-                                        </h5>
-                                        <div class="form-check mb-1">
-                                            <input type="checkbox" class="form-check-input select-all" id="select-all" checked />
-                                            <label class="form-check-label" for="select-all">View All</label>
-                                        </div>
-                                        <div class="calendar-events-filter">
-                                            <div class="form-check form-check-danger mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="personal" data-value="personal" checked />
-                                                <label class="form-check-label" for="personal">Personal</label>
-                                            </div>
-                                            <div class="form-check form-check-primary mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="business" data-value="business" checked />
-                                                <label class="form-check-label" for="business">Business</label>
-                                            </div>
-                                            <div class="form-check form-check-warning mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="family" data-value="family" checked />
-                                                <label class="form-check-label" for="family">Family</label>
-                                            </div>
-                                            <div class="form-check form-check-success mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="holiday" data-value="holiday" checked />
-                                                <label class="form-check-label" for="holiday">Holiday</label>
-                                            </div>
-                                            <div class="form-check form-check-info">
-                                                <input type="checkbox" class="form-check-input input-filter" id="etc" data-value="etc" checked />
-                                                <label class="form-check-label" for="etc">ETC</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-auto">
-                                    <img src="../../../app-assets/images/pages/calendar-illustration.png" alt="Calendar illustration" class="img-fluid" />
-                                </div>
-                            </div>
-                            <!-- /Sidebar -->
-
-                            <!-- Calendar -->
-                            <div class="col position-relative">
-                                <div class="card shadow-none border-0 mb-0 rounded-0">
-                                    <div class="card-body pb-0">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Calendar -->
-                            <div class="body-content-overlay"></div>
-                        </div>
-                    </div>
-                    <!-- Calendar Add/Update/Delete event modal-->
-                    <div class="modal modal-slide-in event-sidebar fade" id="add-new-sidebar">
-                        <div class="modal-dialog sidebar-lg">
-                            <div class="modal-content p-0">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
-                                <div class="modal-header mb-1">
-                                    <h5 class="modal-title">Add Event</h5>
-                                </div>
-                                <div class="modal-body flex-grow-1 pb-sm-0 pb-3">
-                                    <form class="event-form needs-validation" data-ajax="false" novalidate>
-                                        <div class="mb-1">
-                                            <label for="title" class="form-label">Title</label>
-                                            <input type="text" class="form-control" id="title" name="title" placeholder="Event Title" required />
-                                        </div>
-                                        <div class="mb-1">
-                                            <label for="select-label" class="form-label">Label</label>
-                                            <select class="select2 select-label form-select w-100" id="select-label" name="select-label">
-                                                <option data-label="primary" value="Business" selected>Business</option>
-                                                <option data-label="danger" value="Personal">Personal</option>
-                                                <option data-label="warning" value="Family">Family</option>
-                                                <option data-label="success" value="Holiday">Holiday</option>
-                                                <option data-label="info" value="ETC">ETC</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-1 position-relative">
-                                            <label for="start-date" class="form-label">Start Date</label>
-                                            <input type="text" class="form-control" id="start-date" name="start-date" placeholder="Start Date" />
-                                        </div>
-                                        <div class="mb-1 position-relative">
-                                            <label for="end-date" class="form-label">End Date</label>
-                                            <input type="text" class="form-control" id="end-date" name="end-date" placeholder="End Date" />
-                                        </div>
-                                        <div class="mb-1">
-                                            <div class="form-check form-switch">
-                                                <input type="checkbox" class="form-check-input allDay-switch" id="customSwitch3" />
-                                                <label class="form-check-label" for="customSwitch3">All Day</label>
-                                            </div>
-                                        </div>
-                                        <div class="mb-1">
-                                            <label for="event-url" class="form-label">Event URL</label>
-                                            <input type="url" class="form-control" id="event-url" placeholder="https://www.google.com" />
-                                        </div>
-                                        <div class="mb-1 select2-primary">
-                                            <label for="event-guests" class="form-label">Add Guests</label>
-                                            <select class="select2 select-add-guests form-select w-100" id="event-guests" multiple>
-                                                <option data-avatar="1-small.png" value="Jane Foster">Jane Foster</option>
-                                                <option data-avatar="3-small.png" value="Donna Frank">Donna Frank</option>
-                                                <option data-avatar="5-small.png" value="Gabrielle Robertson">Gabrielle Robertson</option>
-                                                <option data-avatar="7-small.png" value="Lori Spears">Lori Spears</option>
-                                                <option data-avatar="9-small.png" value="Sandy Vega">Sandy Vega</option>
-                                                <option data-avatar="11-small.png" value="Cheryl May">Cheryl May</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-1">
-                                            <label for="event-location" class="form-label">Location</label>
-                                            <input type="text" class="form-control" id="event-location" placeholder="Enter Location" />
-                                        </div>
-                                        <div class="mb-1">
-                                            <label class="form-label">Description</label>
-                                            <textarea name="event-description-editor" id="event-description-editor" class="form-control"></textarea>
-                                        </div>
-                                        <div class="mb-1 d-flex">
-                                            <button type="submit" class="btn btn-primary add-event-btn me-1">Add</button>
-                                            <button type="button" class="btn btn-outline-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
-                                            <button type="submit" class="btn btn-primary update-event-btn d-none me-1">Update</button>
-                                            <button class="btn btn-outline-danger btn-delete-event d-none">Delete</button>
-                                        </div>
-                                    </form>
-                                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-primary" role="alert">
+                            <div class="alert-body">
+                                <strong>Info:</strong> This layout can be useful for getting started with empty content section. Please check
+                                the&nbsp;<a class="text-primary" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation/documentation-layout-empty.html" target="_blank">Layout empty documentation</a>&nbsp; for more details.
                             </div>
                         </div>
                     </div>
-                    <!--/ Calendar Add/Update/Delete event modal-->
-                </section>
-                <!-- Full calendar end -->
+                    
+                </div>
 
             </div>
         </div>
@@ -926,7 +825,7 @@
     @yield('ThemeJS')
    
     @yield('PageJS')
-    
+
     <script>
         $(window).on('load', function() {
             if (feather) {

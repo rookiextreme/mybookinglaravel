@@ -9,13 +9,14 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>App calendar - Vuexy - Bootstrap HTML admin template</title>
+    <title>My Booking - Tempahan</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
 </head>
 <!-- END: Head-->
-
+    
     @yield('VendorCSS')
         
     @yield('ThemeCSS')
@@ -347,7 +348,7 @@
                                     </g>
                                 </g>
                             </svg></span>
-                        <h2 class="brand-text">Vuexy</h2>
+                        <h2 class="brand-text">My Booking</h2>
                     </a></li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
             </ul>
@@ -355,7 +356,7 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Utama</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="dashboard-analytics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Analytics</span></a>
                         </li>
@@ -363,41 +364,19 @@
                         </li>
                     </ul>
                 </li>
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i data-feather="more-horizontal"></i>
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Menu</span><i data-feather="more-horizontal"></i>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-email.html"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Email</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="book"><i data-feather="book"></i><span class="menu-title text-truncate" data-i18n="book">Tempahan</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Chat</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Bilik</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-todo.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Todo">Todo</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="building"><i data-feather="building"></i><span class="building" data-i18n="building">Bangunan</span></a>
                 </li>
-                <li class="active nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Calendar</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="location.php"><i data-feather="location"></i><span class="location" data-i18n="location">Lokasi</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Kanban</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Kalendar</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Invoice</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">List</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Preview</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-invoice-edit.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Edit</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-invoice-add.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Add">Add</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-file-manager.html"><i data-feather="save"></i><span class="menu-title text-truncate" data-i18n="File Manager">File Manager</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shield"></i><span class="menu-title text-truncate" data-i18n="Roles &amp; Permission">Roles &amp; Permission</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="app-access-roles.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Roles">Roles</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-access-permission.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Permission">Permission</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
+                <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Shop">Shop</span></a>
                         </li>
@@ -408,8 +387,8 @@
                         <li><a class="d-flex align-items-center" href="app-ecommerce-checkout.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Checkout">Checkout</span></a>
                         </li>
                     </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">User</span></a>
+                </li> -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">Pengguna</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="app-user-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">List</span></a>
                         </li>
@@ -429,7 +408,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Pages">Pages</span></a>
+<!--                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Pages">Pages</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Account Settings">Account Settings</span></a>
                             <ul class="menu-content">
@@ -551,209 +530,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="modal-examples.html"><i data-feather="square"></i><span class="menu-title text-truncate" data-i18n="Modal Examples">Modal Examples</span></a>
-                </li>
-                <li class=" navigation-header"><span data-i18n="User Interface">User Interface</span><i data-feather="more-horizontal"></i>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="ui-typography.html"><i data-feather="type"></i><span class="menu-title text-truncate" data-i18n="Typography">Typography</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="ui-feather.html"><i data-feather="eye"></i><span class="menu-title text-truncate" data-i18n="Feather">Feather</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="credit-card"></i><span class="menu-title text-truncate" data-i18n="Card">Card</span><span class="badge badge-light-success rounded-pill ms-auto me-1">New</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="card-basic.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Basic">Basic</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="card-advance.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Advance">Advance</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="card-statistics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Statistics">Statistics</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="card-analytics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Analytics</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="card-actions.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Card Actions">Card Actions</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="briefcase"></i><span class="menu-title text-truncate" data-i18n="Components">Components</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="component-accordion.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Accordion">Accordion</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-alerts.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Alerts">Alerts</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-avatar.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Avatar">Avatar</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-badges.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Badges">Badges</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-breadcrumbs.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Breadcrumbs">Breadcrumbs</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-buttons.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Buttons">Buttons</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-carousel.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Carousel">Carousel</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-collapse.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Collapse">Collapse</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-divider.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Divider">Divider</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-dropdowns.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Dropdowns">Dropdowns</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-list-group.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List Group">List Group</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-modals.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Modals">Modals</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-navs-component.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Navs Component">Navs Component</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-offcanvas.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Offcanvas">Offcanvas</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-pagination.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Pagination">Pagination</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-pill-badges.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Pill Badges">Pill Badges</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-pills-component.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Pills Component">Pills Component</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-popovers.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Popovers">Popovers</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-progress.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Progress">Progress</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-spinner.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Spinner">Spinner</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-tabs-component.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Tabs Component">Tabs Component</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-timeline.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Timeline">Timeline</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-bs-toast.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Toasts">Toasts</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="component-tooltips.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Tooltips">Tooltips</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="box"></i><span class="menu-title text-truncate" data-i18n="Extensions">Extensions</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="ext-component-sweet-alerts.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Sweet Alert">Sweet Alert</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-blockui.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Block UI">BlockUI</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-toastr.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Toastr">Toastr</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-sliders.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Sliders">Sliders</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-drag-drop.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Drag &amp; Drop">Drag &amp; Drop</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-tour.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Tour">Tour</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-clipboard.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Clipboard">Clipboard</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-media-player.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Media player">Media Player</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-context-menu.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Context Menu">Context Menu</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-swiper.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="swiper">Swiper</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-tree.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Tree">Tree</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-ratings.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Ratings">Ratings</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="ext-component-i18n.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="l18n">l18n</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="layout"></i><span class="menu-title text-truncate" data-i18n="Page Layouts">Page Layouts</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="layout-collapsed-menu.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Collapsed Menu">Collapsed Menu</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="layout-full.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Layout Full">Layout Full</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="layout-without-menu.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Without Menu">Without Menu</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Layout Empty">Layout Empty</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="layout-blank.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Layout Blank">Layout Blank</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">Forms &amp; Tables</span><i data-feather="more-horizontal"></i>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="copy"></i><span class="menu-title text-truncate" data-i18n="Form Elements">Form Elements</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="form-input.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Input">Input</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-input-groups.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Input Groups">Input Groups</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-input-mask.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Input Mask">Input Mask</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-textarea.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Textarea">Textarea</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-checkbox.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Checkbox">Checkbox</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-radio.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Radio">Radio</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-custom-options.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Custom Options">Custom Options</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-switch.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Switch">Switch</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-select.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Select">Select</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-number-input.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Number Input">Number Input</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-file-uploader.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="File Uploader">File Uploader</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-quill-editor.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Quill Editor">Quill Editor</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="form-date-time-picker.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Date &amp; Time Picker">Date &amp; Time Picker</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="form-layout.html"><i data-feather="box"></i><span class="menu-title text-truncate" data-i18n="Form Layout">Form Layout</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="form-wizard.html"><i data-feather="package"></i><span class="menu-title text-truncate" data-i18n="Form Wizard">Form Wizard</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="form-validation.html"><i data-feather="check-circle"></i><span class="menu-title text-truncate" data-i18n="Form Validation">Form Validation</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="form-repeater.html"><i data-feather="rotate-cw"></i><span class="menu-title text-truncate" data-i18n="Form Repeater">Form Repeater</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="table-bootstrap.html"><i data-feather="server"></i><span class="menu-title text-truncate" data-i18n="Table">Table</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Datatable">Datatable</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="table-datatable-basic.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Basic">Basic</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="table-datatable-advanced.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Advanced">Advanced</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" navigation-header"><span data-i18n="Charts &amp; Maps">Charts &amp; Maps</span><i data-feather="more-horizontal"></i>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="pie-chart"></i><span class="menu-title text-truncate" data-i18n="Charts">Charts</span><span class="badge badge-light-danger rounded-pill ms-auto me-2">2</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="chart-apex.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Apex">Apex</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="chart-chartjs.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Chartjs">Chartjs</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="maps-leaflet.html"><i data-feather="map"></i><span class="menu-title text-truncate" data-i18n="Leaflet Maps">Leaflet Maps</span></a>
-                </li>
-                <li class=" navigation-header"><span data-i18n="Misc">Misc</span><i data-feather="more-horizontal"></i>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="menu"></i><span class="menu-title text-truncate" data-i18n="Menu Levels">Menu Levels</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Second Level">Second Level 2.1</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Second Level">Second Level 2.2</span></a>
-                            <ul class="menu-content">
-                                <li><a class="d-flex align-items-center" href="#"><span class="menu-item text-truncate" data-i18n="Third Level">Third Level 3.1</span></a>
-                                </li>
-                                <li><a class="d-flex align-items-center" href="#"><span class="menu-item text-truncate" data-i18n="Third Level">Third Level 3.2</span></a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="disabled nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="eye-off"></i><span class="menu-title text-truncate" data-i18n="Disabled Menu">Disabled Menu</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation" target="_blank"><i data-feather="folder"></i><span class="menu-title text-truncate" data-i18n="Documentation">Documentation</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="https://pixinvent.ticksy.com/" target="_blank"><i data-feather="life-buoy"></i><span class="menu-title text-truncate" data-i18n="Raise Support">Raise Support</span></a>
-                </li>
-            </ul>
+            </ul> -->
         </div>
     </div>
     <!-- END: Main Menu-->
@@ -764,146 +541,421 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper container-xxl p-0">
             <div class="content-header row">
-            </div>
-            <div class="content-body">
-                <!-- Full calendar start -->
-                <section>
-                    <div class="app-calendar overflow-hidden border">
-                        <div class="row g-0">
-                            <!-- Sidebar -->
-                            <div class="col app-calendar-sidebar flex-grow-0 overflow-hidden d-flex flex-column" id="app-calendar-sidebar">
-                                <div class="sidebar-wrapper">
-                                    <div class="card-body d-flex justify-content-center">
-                                        <button class="btn btn-primary btn-toggle-sidebar w-100" data-bs-toggle="modal" data-bs-target="#add-new-sidebar">
-                                            <span class="align-middle">Add Event</span>
-                                        </button>
-                                    </div>
-                                    <div class="card-body pb-0">
-                                        <h5 class="section-label mb-1">
-                                            <span class="align-middle">Filter</span>
-                                        </h5>
-                                        <div class="form-check mb-1">
-                                            <input type="checkbox" class="form-check-input select-all" id="select-all" checked />
-                                            <label class="form-check-label" for="select-all">View All</label>
-                                        </div>
-                                        <div class="calendar-events-filter">
-                                            <div class="form-check form-check-danger mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="personal" data-value="personal" checked />
-                                                <label class="form-check-label" for="personal">Personal</label>
-                                            </div>
-                                            <div class="form-check form-check-primary mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="business" data-value="business" checked />
-                                                <label class="form-check-label" for="business">Business</label>
-                                            </div>
-                                            <div class="form-check form-check-warning mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="family" data-value="family" checked />
-                                                <label class="form-check-label" for="family">Family</label>
-                                            </div>
-                                            <div class="form-check form-check-success mb-1">
-                                                <input type="checkbox" class="form-check-input input-filter" id="holiday" data-value="holiday" checked />
-                                                <label class="form-check-label" for="holiday">Holiday</label>
-                                            </div>
-                                            <div class="form-check form-check-info">
-                                                <input type="checkbox" class="form-check-input input-filter" id="etc" data-value="etc" checked />
-                                                <label class="form-check-label" for="etc">ETC</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-auto">
-                                    <img src="../../../app-assets/images/pages/calendar-illustration.png" alt="Calendar illustration" class="img-fluid" />
-                                </div>
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">TEMPAHAN</h2>
+                            <div class="breadcrumb-wrapper">
+                                <!-- <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Forms</a>
+                                    </li>
+                                    <li class="breadcrumb-item active"><a href="#">Form Layouts</a>
+                                    </li>
+                                </ol> -->
                             </div>
-                            <!-- /Sidebar -->
-
-                            <!-- Calendar -->
-                            <div class="col position-relative">
-                                <div class="card shadow-none border-0 mb-0 rounded-0">
-                                    <div class="card-body pb-0">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Calendar -->
-                            <div class="body-content-overlay"></div>
                         </div>
                     </div>
-                    <!-- Calendar Add/Update/Delete event modal-->
-                    <div class="modal modal-slide-in event-sidebar fade" id="add-new-sidebar">
-                        <div class="modal-dialog sidebar-lg">
-                            <div class="modal-content p-0">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
-                                <div class="modal-header mb-1">
-                                    <h5 class="modal-title">Add Event</h5>
+                </div>
+                <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
+                    <div class="mb-1 breadcrumb-right">
+                        <div class="dropdown">
+                            <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="grid"></i></button>
+                            <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="app-todo.html"><i class="me-1" data-feather="check-square"></i><span class="align-middle">Todo</span></a><a class="dropdown-item" href="app-chat.html"><i class="me-1" data-feather="message-square"></i><span class="align-middle">Chat</span></a><a class="dropdown-item" href="app-email.html"><i class="me-1" data-feather="mail"></i><span class="align-middle">Email</span></a><a class="dropdown-item" href="app-calendar.html"><i class="me-1" data-feather="calendar"></i><span class="align-middle">Calendar</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <!-- Basic Horizontal form layout section start -->
+                <!-- <section id="basic-horizontal-layouts">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Horizontal Form</h4>
                                 </div>
-                                <div class="modal-body flex-grow-1 pb-sm-0 pb-3">
-                                    <form class="event-form needs-validation" data-ajax="false" novalidate>
-                                        <div class="mb-1">
-                                            <label for="title" class="form-label">Title</label>
-                                            <input type="text" class="form-control" id="title" name="title" placeholder="Event Title" required />
-                                        </div>
-                                        <div class="mb-1">
-                                            <label for="select-label" class="form-label">Label</label>
-                                            <select class="select2 select-label form-select w-100" id="select-label" name="select-label">
-                                                <option data-label="primary" value="Business" selected>Business</option>
-                                                <option data-label="danger" value="Personal">Personal</option>
-                                                <option data-label="warning" value="Family">Family</option>
-                                                <option data-label="success" value="Holiday">Holiday</option>
-                                                <option data-label="info" value="ETC">ETC</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-1 position-relative">
-                                            <label for="start-date" class="form-label">Start Date</label>
-                                            <input type="text" class="form-control" id="start-date" name="start-date" placeholder="Start Date" />
-                                        </div>
-                                        <div class="mb-1 position-relative">
-                                            <label for="end-date" class="form-label">End Date</label>
-                                            <input type="text" class="form-control" id="end-date" name="end-date" placeholder="End Date" />
-                                        </div>
-                                        <div class="mb-1">
-                                            <div class="form-check form-switch">
-                                                <input type="checkbox" class="form-check-input allDay-switch" id="customSwitch3" />
-                                                <label class="form-check-label" for="customSwitch3">All Day</label>
+                                <div class="card-body">
+                                    <form class="form form-horizontal">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="first-name">First Name</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="first-name" class="form-control" name="fname" placeholder="First Name" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="email-id">Email</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <input type="email" id="email-id" class="form-control" name="email-id" placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="contact-info">Mobile</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <input type="number" id="contact-info" class="form-control" name="contact" placeholder="Mobile" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="password">Password</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <input type="password" id="password" class="form-control" name="password" placeholder="Password" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9 offset-sm-3">
+                                                <div class="mb-1">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="customCheck1" />
+                                                        <label class="form-check-label" for="customCheck1">Remember me</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9 offset-sm-3">
+                                                <button type="reset" class="btn btn-primary me-1">Submit</button>
+                                                <button type="reset" class="btn btn-outline-secondary">Reset</button>
                                             </div>
                                         </div>
-                                        <div class="mb-1">
-                                            <label for="event-url" class="form-label">Event URL</label>
-                                            <input type="url" class="form-control" id="event-url" placeholder="https://www.google.com" />
-                                        </div>
-                                        <div class="mb-1 select2-primary">
-                                            <label for="event-guests" class="form-label">Add Guests</label>
-                                            <select class="select2 select-add-guests form-select w-100" id="event-guests" multiple>
-                                                <option data-avatar="1-small.png" value="Jane Foster">Jane Foster</option>
-                                                <option data-avatar="3-small.png" value="Donna Frank">Donna Frank</option>
-                                                <option data-avatar="5-small.png" value="Gabrielle Robertson">Gabrielle Robertson</option>
-                                                <option data-avatar="7-small.png" value="Lori Spears">Lori Spears</option>
-                                                <option data-avatar="9-small.png" value="Sandy Vega">Sandy Vega</option>
-                                                <option data-avatar="11-small.png" value="Cheryl May">Cheryl May</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-1">
-                                            <label for="event-location" class="form-label">Location</label>
-                                            <input type="text" class="form-control" id="event-location" placeholder="Enter Location" />
-                                        </div>
-                                        <div class="mb-1">
-                                            <label class="form-label">Description</label>
-                                            <textarea name="event-description-editor" id="event-description-editor" class="form-control"></textarea>
-                                        </div>
-                                        <div class="mb-1 d-flex">
-                                            <button type="submit" class="btn btn-primary add-event-btn me-1">Add</button>
-                                            <button type="button" class="btn btn-outline-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
-                                            <button type="submit" class="btn btn-primary update-event-btn d-none me-1">Update</button>
-                                            <button class="btn btn-outline-danger btn-delete-event d-none">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Horizontal Form with Icons</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form class="form form-horizontal">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="fname-icon">First Name</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <span class="input-group-text"><i data-feather="user"></i></span>
+                                                            <input type="text" id="fname-icon" class="form-control" name="fname-icon" placeholder="First Name" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="email-icon">Email</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <span class="input-group-text"><i data-feather="mail"></i></span>
+                                                            <input type="email" id="email-icon" class="form-control" name="email-id-icon" placeholder="Email" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="contact-icon">Mobile</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <span class="input-group-text"><i data-feather="smartphone"></i></span>
+                                                            <input type="number" id="contact-icon" class="form-control" name="contact-icon" placeholder="Mobile" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1 row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="pass-icon">Password</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <span class="input-group-text"><i data-feather="lock"></i></span>
+                                                            <input type="password" id="pass-icon" class="form-control" name="contact-icon" placeholder="Password" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9 offset-sm-3">
+                                                <div class="mb-1">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="customCheck2" />
+                                                        <label class="form-check-label" for="customCheck2">Remember me</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9 offset-sm-3">
+                                                <button type="reset" class="btn btn-primary me-1">Submit</button>
+                                                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--/ Calendar Add/Update/Delete event modal-->
-                </section>
-                <!-- Full calendar end -->
+                </section> -->
+                <!-- Basic Horizontal form layout section end -->
 
+                <!-- Basic Vertical form layout section start -->
+                <section id="basic-vertical-layouts">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Borang Tempahan</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form class="form form-vertical" action="{{ route('room') }}" method="POST">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Nama Mesyuarat</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Mesyuarat" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Nama Urusetia</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Urusetia" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">IC Urusetia</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="IC Urusetia" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="col-md-6 mb-1">
+                                                    <label class="form-label" for="fp-date-time">Tarikh & Masa Mula</label>
+                                                    <input type="text" id="fp-date-time" class="form-control flatpickr-date-time" placeholder="YYYY-MM-DD HH:MM" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="col-md-6 mb-1">
+                                                    <label class="form-label" for="fp-date-time">Tarikh & Masa Akhir</label>
+                                                    <input type="text" id="fp-date-time" class="form-control flatpickr-date-time" placeholder="YYYY-MM-DD HH:MM" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Nama Pegawai</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Pegawai" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="email-id-vertical">Bilangan Pegawai Agensi</label>
+                                                    <div class="input-group">
+                                                    <input type="number" class="touchspin-icon" value="0" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="email-id-vertical">Bilangan Pegawai Luar</label>
+                                                    <div class="input-group">
+                                                    <input type="number" class="touchspin-icon" value="0" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Catatan</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Catatan"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <!-- <div class="mb-1">
+                                                    <label class="form-label" for="first-name-vertical">Status</label>
+                                                    <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="demo-inline-spacing">
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked />
+                                                                        <label class="form-check-label" for="inlineRadio1">Aktif</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                                                                        <label class="form-check-label" for="inlineRadio2">Tidak Aktif</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div> -->        
+                                            <!-- <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="password-vertical">Password</label>
+                                                    <input type="password" id="password-vertical" class="form-control" name="contact" placeholder="Password" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="customCheck3" />
+                                                        <label class="form-check-label" for="customCheck3">Remember me</label>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <div class="col-12">
+                                                <button type="reset" class="btn btn-primary me-1">Simpan</button>
+                                                <button type="reset" class="btn btn-outline-secondary">Padam</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Vertical Form with Icons</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form class="form form-vertical">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-icon">First Name</label>
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text"><i data-feather="user"></i></span>
+                                                        <input type="text" id="first-name-icon" class="form-control" name="fname-icon" placeholder="First Name" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="email-id-icon">Email</label>
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text"><i data-feather="mail"></i></span>
+                                                        <input type="email" id="email-id-icon" class="form-control" name="email-id-icon" placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="contact-info-icon">Mobile</label>
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text"><i data-feather="smartphone"></i></span>
+                                                        <input type="number" id="contact-info-icon" class="form-control" name="contact-icon" placeholder="Mobile" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="password-icon">Password</label>
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text"><i data-feather="lock"></i></span>
+                                                        <input type="password" id="password-icon" class="form-control" name="contact-icon" placeholder="Password" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-1">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="customCheck4" />
+                                                        <label class="form-check-label" for="customCheck4">Remember me</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="reset" class="btn btn-primary me-1">Submit</button>
+                                                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+                <!-- Basic Vertical form layout section end -->
+
+                <!-- Basic multiple Column Form section start -->
+                <!-- <section id="multiple-column-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Multiple Column</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form class="form">
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="first-name-column">First Name</label>
+                                                    <input type="text" id="first-name-column" class="form-control" placeholder="First Name" name="fname-column" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="last-name-column">Last Name</label>
+                                                    <input type="text" id="last-name-column" class="form-control" placeholder="Last Name" name="lname-column" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="city-column">City</label>
+                                                    <input type="text" id="city-column" class="form-control" placeholder="City" name="city-column" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="country-floating">Country</label>
+                                                    <input type="text" id="country-floating" class="form-control" name="country-floating" placeholder="Country" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="company-column">Company</label>
+                                                    <input type="text" id="company-column" class="form-control" name="company-column" placeholder="Company" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="mb-1">
+                                                    <label class="form-label" for="email-id-column">Email</label>
+                                                    <input type="email" id="email-id-column" class="form-control" name="email-id-column" placeholder="Email" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="reset" class="btn btn-primary me-1">Submit</button>
+                                                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                <!-- Basic Floating Label Form section end -->
             </div>
         </div>
     </div>
@@ -912,13 +964,8 @@
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-    <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span><span class="float-md-end d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span></p>
-    </footer>
-    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
-    <!-- END: Footer-->
 
+    <!-- END: Footer-->
     @yield('VendorJS')
     
     @yield('PageVendorJS')
@@ -926,7 +973,6 @@
     @yield('ThemeJS')
    
     @yield('PageJS')
-    
     <script>
         $(window).on('load', function() {
             if (feather) {
