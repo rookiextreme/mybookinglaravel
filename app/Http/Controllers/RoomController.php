@@ -22,8 +22,8 @@ class RoomController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {       
-        return view('RoomTemplate.CSS_file');
+    {      
+        return view('room.create');
     }
 
     /**
