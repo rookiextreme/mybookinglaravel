@@ -23,7 +23,7 @@ class LocationController extends Controller
      */
     public function create()
     {
-        return view('LocationTemplate.CSS_file');
+        return view('location.create');
     }
 
     /**

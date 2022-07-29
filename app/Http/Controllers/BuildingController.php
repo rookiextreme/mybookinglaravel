@@ -23,7 +23,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
-        return view('BuildingTemplate.CSS_file');
+        return view('building.create');
     }
 
     /**
