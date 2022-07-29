@@ -23,7 +23,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
-        return view('building');
+        return view('BuildingTemplate.CSS_file');
     }
 
     /**
@@ -43,9 +43,10 @@ class BuildingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    //public function show($id)
+    public function show()
     {
-        //
+        return view('BuildingTemplate.CSS_file');
     }
 
     /**

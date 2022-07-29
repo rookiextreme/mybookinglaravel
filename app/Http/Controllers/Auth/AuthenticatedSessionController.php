@@ -17,15 +17,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
-        // return view('auth.login');
         return view('LoginTemplate.CSS_file');
     }
-    //  public function index()
-    // {
-    //     return view('index');
-    // }
-     /**
-     * Handle an incoming authentication request
+
+    /**
+     * Handle an incoming authentication request.
      *
      * @param  \App\Http\Requests\Auth\LoginRequest  $request
      * @return \Illuminate\Http\RedirectResponse
@@ -37,7 +33,6 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerate();
 
         return redirect()->intended(RouteServiceProvider::HOME);
-        // return redirect()->intended(RouteServiceProvider::HOME);
     }
 
     /**

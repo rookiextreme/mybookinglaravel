@@ -1,4 +1,5 @@
 @extends('building')
+@extends('buildingList')
 @section('VendorJS')    
     <!-- BEGIN: Vendor JS-->
     <script src="{{asset('app-assets/vendors/js/vendors.min.js')}}"></script>

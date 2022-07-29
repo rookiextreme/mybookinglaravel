@@ -22,8 +22,8 @@ class RoomController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        return view('room');
+    {       
+        return view('RoomTemplate.CSS_file');
     }
 
     /**
@@ -43,9 +43,10 @@ class RoomController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    //public function show($id)
+    public function show()
     {
-        //
+        return view('RoomTemplate.CSS_file');
     }
 
     /**
