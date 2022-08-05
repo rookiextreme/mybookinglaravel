@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Building;
+use Illuminate\Support\Facades\DB;
 
 class BuildingController extends Controller
 {
@@ -13,7 +15,9 @@ class BuildingController extends Controller
      */
     public function index()
     {
-        //
+        $model = Building::all();
+ 
+        return view('building.index', ['buildings' => $model]);
     }
 
     /**
@@ -23,7 +27,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
-        return view('BuildingTemplate.CSS_file');
+        return view('building.create');
     }
 
     /**
@@ -34,7 +38,11 @@ class BuildingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $name = $request->input('name');
+        $model = new Building;
+        $model->name=$name;
+        $model->save();
+        return redirect()->action([BuildingController::class, 'index']);
     }
 
     /**
@@ -43,10 +51,10 @@ class BuildingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    //public function show($id)
-    public function show()
+    
+    public function show($id)
     {
-        return view('BuildingTemplate.CSS_file');
+        //
     }
 
     /**
@@ -57,7 +65,11 @@ class BuildingController extends Controller
      */
     public function edit($id)
     {
-        //
+        $model = Building::find($id);
+        return view('building.edit', [
+            'id' => $id,
+            'building' => $model
+        ]);
     }
 
     /**
@@ -67,9 +79,19 @@ class BuildingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        // $model = Building::find($request->input('building_id'));
+
+        $model = Building::where('id',$request->input('building_id'))->first();
+ 
+        $name = $request->input('name');
+
+        $model->name = $name ;
+         
+        $model->save();
+
+        return redirect()->action([BuildingController::class, 'index']);
     }
 
     /**
@@ -80,6 +102,8 @@ class BuildingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $model = Building::where('id',$id)->delete();
+ 
+        return redirect()->action([BuildingController::class, 'index']);
     }
 }

@@ -31,23 +31,32 @@ Route::get('/dashboard', function () {
 Route::get('room', [RoomController::class, 'create'])
                 ->name('room');
 
-Route::get('roomList', [RoomController::class, 'show']);
+Route::get('roomList', [RoomController::class, 'index']);
 
 //location
 Route::get('location', [LocationController::class, 'create'])
                 ->name('location');
 
-Route::get('locationList', [LocationController::class, 'show']);
+Route::post('location', [LocationController::class, 'store']);
+
+Route::get('locationList', [LocationController::class, 'index']);
 
 //building
 Route::get('building', [BuildingController::class, 'create'])
                 ->name('building');
 
-Route::get('buildingList', [BuildingController::class, 'show']);
+Route::post('building', [BuildingController::class, 'store']);
+
+Route::get('buildingList', [BuildingController::class, 'index']);
+
+Route::get('building/edit/{id}', [BuildingController::class, 'edit']);
+
+Route::get('building/edit/{id}', [BuildingController::class, 'edit']);
+
+Route::get('building/delete/{id}', [BuildingController::class, 'destroy']);
 
 //booking
-Route::get('booking', [BookingController::class, 'create'])
-                ->name('booking');
+Route::post('building/update', [BuildingController::class, 'update']);
 
 //calendar
 Route::get('calendar', [CalendarController::class, 'create']);
