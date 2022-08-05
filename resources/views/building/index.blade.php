@@ -5,7 +5,7 @@
     <div class="content-header-left col-md-9 col-12 mb-2">
         <div class="row breadcrumbs-top">
             <div class="col-12">
-                <h2 class="content-header-title float-start mb-0">BANGUNAN</h2>
+                <h2 class="content-header-title float-start mb-0">SENARAI BANGUNAN</h2>
                <!--  <div class="breadcrumb-wrapper">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a>
@@ -32,35 +32,43 @@
 
 @section('content')
 <div class="content-body">
-    <section id="basic-vertical-layouts">
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Tambah Bangunan</h4>
-                    </div>
-                    <div class="card-body">
-                        <form class="form form-vertical" action="{{ route('building') }}" method="POST">
-                            @csrf
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-1">
-                                        <label class="form-label" for="first-name-vertical">Nama Bangunan</label>
-                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Bangunan" />
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary me-1">Simpan</button>
-                                    <button type="reset" class="btn btn-outline-secondary">Padam</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-primary" role="alert">
+                <div class="alert-body">
+                    <strong>Info:</strong> This layout can be useful for getting started with empty content section. Please check
+                    the&nbsp;<a class="text-primary" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation/documentation-layout-empty.html" target="_blank">Layout empty documentation</a>&nbsp; for more details.
                 </div>
             </div>
-        </div>
-    </section>
+        </div> 
+    </div>
 </div>
+@endsection
+
+@section('table')
+<tr>
+    <th>Id</th>
+    <th>Nama Bangunan</th>
+    <th>Ditambah Pada</th>
+    <th>Dikemaskini Pada</th>
+    <th>Tindakan</th>
+</tr>
+@foreach ($buildings as $building)
+ <tr>
+    <td>{{ $building->id }}</td>
+    <td>{{ $building->name }}</td>
+    <td>{{ $building->created_at }}</td>
+    <td>{{ $building->updated_at }}</td>
+    <td>
+        <a href="{{ Request::root()}}/building/edit/{{$building->id}}">
+            <button type="button" class="btn btn-primary">Kemaskini</button>
+        </a>
+        <a href="{{ Request::root()}}/building/delete/{{$building->id}}">
+            <button type="button" class="btn btn-danger">Padam</button>
+        </a>
+    </td>
+</tr>
+@endforeach
 @endsection
 
 @section('customJS')

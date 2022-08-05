@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Location;
 
 class LocationController extends Controller
 {
@@ -13,7 +14,7 @@ class LocationController extends Controller
      */
     public function index()
     {
-        //
+        return view('location.index');
     }
 
     /**
@@ -43,10 +44,10 @@ class LocationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    //public function show($id)
-    public function show()
+    
+    public function show($id)
     {
-        return view('LocationTemplate.CSS_file');
+        //
     }
 
     /**

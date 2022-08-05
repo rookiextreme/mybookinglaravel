@@ -37,16 +37,17 @@
             <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Tambah Bangunan</h4>
+                        <h4 class="card-title">Kemaskini Bangunan</h4>
                     </div>
                     <div class="card-body">
-                        <form class="form form-vertical" action="{{ route('building') }}" method="POST">
+                        <form class="form form-vertical" action="{{ Request::root()}}/building/update" method="POST">
                             @csrf
+                            <!-- @method('PUT') -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="first-name-vertical">Nama Bangunan</label>
-                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Bangunan" />
+                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Bangunan" value="{{$building->name}}" />
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -54,6 +55,7 @@
                                     <button type="reset" class="btn btn-outline-secondary">Padam</button>
                                 </div>
                             </div>
+                            <input type="hidden" name="building_id" value="{{$id}}">
                         </form>
                     </div>
                 </div>
