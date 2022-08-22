@@ -5,7 +5,7 @@
     <div class="content-header-left col-md-9 col-12 mb-2">
         <div class="row breadcrumbs-top">
             <div class="col-12">
-                <h2 class="content-header-title float-start mb-0">SENARAI BILIK</h2>
+                <h2 class="content-header-title float-start mb-0">SENARAI TEMPAHAN</h2>
                <!--  <div class="breadcrumb-wrapper">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a>
@@ -48,22 +48,22 @@
 @section('table')
 <tr>
     <th>Id</th>
-    <th>Nama Bilik</th>
+    <th>Nama Mesyuarat</th>
     <th>Ditambah Pada</th>
     <th>Dikemaskini Pada</th>
     <th>Tindakan</th>
 </tr>
-@foreach ($rooms as $room)
+@foreach ($bookings as $booking)
  <tr>
-    <td>{{ $room->id }}</td>
-    <td>{{ $room->name }}</td>
-    <td>{{ $room->created_at }}</td>
-    <td>{{ $room->updated_at }}</td>
+    <td>{{ $booking->id }}</td>
+    <td>{{ $booking->nama_mesyuarat }}</td>
+    <td>{{ $booking->created_at }}</td>
+    <td>{{ $booking->updated_at }}</td>
     <td>
-        <a href="{{ Request::root()}}/room/edit/{{$room->id}}">
+        <a href="{{ Request::root()}}/booking/edit/{{$booking->id}}">
             <button type="button" class="btn btn-primary">Kemaskini</button>
         </a>
-        <a href="{{ Request::root()}}/room/delete/{{$room->id}}">
+        <a href="{{ Request::root()}}/booking/delete/{{$booking->id}}">
             <button type="button" class="btn btn-danger">Padam</button>
         </a>
     </td>

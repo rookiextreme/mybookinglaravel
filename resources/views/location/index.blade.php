@@ -45,6 +45,32 @@
 </div>
 @endsection
 
+@section('table')
+<tr>
+    <th>Id</th>
+    <th>Nama Lokasi</th>
+    <th>Ditambah Pada</th>
+    <th>Dikemaskini Pada</th>
+    <th>Tindakan</th>
+</tr>
+@foreach ($locations as $location)
+ <tr>
+    <td>{{ $location->id }}</td>
+    <td>{{ $location->name }}</td>
+    <td>{{ $location->created_at }}</td>
+    <td>{{ $location->updated_at }}</td>
+    <td>
+        <a href="{{ Request::root()}}/location/edit/{{$location->id}}">
+            <button type="button" class="btn btn-primary">Kemaskini</button>
+        </a>
+        <a href="{{ Request::root()}}/location/delete/{{$location->id}}">
+            <button type="button" class="btn btn-danger">Padam</button>
+        </a>
+    </td>
+</tr>
+@endforeach
+@endsection
+
 @section('customJS')
 
 @endsection

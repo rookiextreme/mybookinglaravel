@@ -364,7 +364,7 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Utama</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Laman Utama</span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="dashboard-analytics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Analytics</span></a>
                         </li>
@@ -374,15 +374,15 @@
                 </li>
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Menu</span><i data-feather="more-horizontal"></i>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="book"><i data-feather="book"></i><span class="menu-title text-truncate" data-i18n="book">Tempahan</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('booking') }}"><i data-feather="book"></i><span class="menu-title text-truncate" data-i18n="book">Tempahan</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Bilik</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('room') }}"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Bilik</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="building"><i data-feather="building"></i><span class="building" data-i18n="building">Bangunan</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('building') }}"><i data-feather="building"></i><span class="building" data-i18n="building">Bangunan</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="location.php"><i data-feather="location"></i><span class="location" data-i18n="location">Lokasi</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('location') }}"><i data-feather='map-pin'></i><span class="location" data-i18n="location">Lokasi</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Kalendar</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather='calendar'></i><span class="menu-title text-truncate" data-i18n="Calendar">Kalendar</span></a>
                 </li>
                 <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
                     <ul class="menu-content">
