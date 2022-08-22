@@ -5,7 +5,7 @@
     <div class="content-header-left col-md-9 col-12 mb-2">
         <div class="row breadcrumbs-top">
             <div class="col-12">
-                <h2 class="content-header-title float-start mb-0">LOKASI</h2>
+                <h2 class="content-header-title float-start mb-0">BILIK</h2>
                <!--  <div class="breadcrumb-wrapper">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a>
@@ -37,46 +37,40 @@
             <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Tambah Lokasi</h4>
+                        <h4 class="card-title">Kemaskini Bilik</h4>
                     </div>
                     <div class="card-body">
-                        <form class="form form-vertical" action="{{ route('location') }}" method="POST">
+                        <form class="form form-vertical" action="{{ Request::root()}}/room/update" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-12">
+                                   <div class="mb-1">
+                                        <label class="form-label" for="first-name-vertical">Nama Bilik</label>
+                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Bilik" value="{{$room->name}}" />
+                                    </div>
                                     <div class="mb-1">
-                                        <label class="form-label" for="first-name-vertical">Nama Lokasi</label>
-                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Lokasi" />
+                                        <label class="form-label" for="email-id-vertical">Aras / Tingkat</label>
+                                        <input type="number" id="email-id-vertical" class="form-control" name="aras" placeholder="Aras / Tingkat" value="{{$room->aras}}" />
+                                    </div>
+                                    <div class="mb-1">
+                                        <label class="form-label" for="contact-info-vertical">Kapasiti Bilik</label>
+                                        <input type="number" id="contact-info-vertical" class="form-control" name="kapasiti" placeholder="Kapasiti Bilik" value="{{$room->kapasiti}}" />
+                                    </div>
+                                    <div class="mb-1">
+                                        <label class="form-label" for="first-name-vertical">Fasiliti / Kemudahan</label>
+                                        <input type="text" id="first-name-vertical" class="form-control" name="kemudahan" placeholder="Fasiliti / Kemudahan" value="{{$room->kemudahan}}" />
+                                    </div>
+                                    <div class="mb-1">
+                                        <label class="form-label" for="first-name-vertical">Penerangan</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" name="penerangan" rows="3" placeholder="Penerangan" value="{{$room->penerangan}}"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-12">
-<!--                                     <div class="mb-1">
-                                        <label class="form-label" for="first-name-vertical">Status</label>
-                                        <div class="row">
-                                        <div class="col-12">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="demo-inline-spacing">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="status" id="inlineRadio1" value="option1" checked />
-                                                            <label class="form-check-label" for="inlineRadio1">Aktif</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="status" id="inlineRadio2" value="option2" />
-                                                            <label class="form-check-label" for="inlineRadio2">Tidak Aktif</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>  -->      
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary me-1">Simpan</button>
                                     <button type="reset" class="btn btn-outline-secondary">Padam</button>
                                 </div>
-                                </div>
                             </div>
+                            <input type="hidden" name="room_id" value="{{$id}}">
                         </form>
                     </div>
                 </div>
@@ -85,7 +79,7 @@
     </section>
 </div>
 @endsection
-   
-@section('customeJS')
+
+@section('customJS')
 
 @endsection

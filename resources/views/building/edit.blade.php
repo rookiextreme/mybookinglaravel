@@ -42,7 +42,6 @@
                     <div class="card-body">
                         <form class="form form-vertical" action="{{ Request::root()}}/building/update" method="POST">
                             @csrf
-                            <!-- @method('PUT') -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mb-1">

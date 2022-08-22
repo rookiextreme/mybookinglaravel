@@ -46,59 +46,59 @@
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="first-name-vertical">Nama Bilik</label>
-                                        <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nama Bilik" />
+                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Bilik" />
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="email-id-vertical">Aras / Tingkat</label>
-                                        <input type="email" id="email-id-vertical" class="form-control" name="email-id" placeholder="Aras / Tingkat" />
+                                        <input type="number" id="email-id-vertical" class="form-control" name="aras" placeholder="Aras / Tingkat" />
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="contact-info-vertical">Kapasiti Bilik</label>
-                                        <input type="number" id="contact-info-vertical" class="form-control" name="contact" placeholder="Kapasiti Bilik" />
+                                        <input type="number" id="contact-info-vertical" class="form-control" name="kapasiti" placeholder="Kapasiti Bilik" />
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="first-name-vertical">Fasiliti / Kemudahan</label>
-                                        <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Fasiliti / Kemudahan" />
+                                        <input type="text" id="first-name-vertical" class="form-control" name="kemudahan" placeholder="Fasiliti / Kemudahan" />
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="first-name-vertical">Penerangan</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Penerangan"></textarea>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" name="penerangan" rows="3" placeholder="Penerangan"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="mb-1">
+                                  <!--   <div class="mb-1">
                                         <label class="form-label" for="first-name-vertical">Status</label>
                                         <div class="row">
-                                        <div class="col-12">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="demo-inline-spacing">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked />
-                                                            <label class="form-check-label" for="inlineRadio1">Aktif</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-                                                            <label class="form-check-label" for="inlineRadio2">Tidak Aktif</label>
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="demo-inline-spacing">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked />
+                                                                <label class="form-check-label" for="inlineRadio1">Aktif</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                                                                <label class="form-check-label" for="inlineRadio2">Tidak Aktif</label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>  -->   
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary me-1">Simpan</button>
+                                        <button type="reset" class="btn btn-outline-secondary">Padam</button>
                                     </div>
-                                </div>    
-                                <div class="col-12">
-                                    <button type="reset" class="btn btn-primary me-1">Simpan</button>
-                                    <button type="reset" class="btn btn-outline-secondary">Padam</button>
-                                </div>
                                 </div>
                             </div>
                         </form>

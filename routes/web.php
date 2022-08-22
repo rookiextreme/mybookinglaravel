@@ -31,7 +31,15 @@ Route::get('/dashboard', function () {
 Route::get('room', [RoomController::class, 'create'])
                 ->name('room');
 
+Route::post('room', [RoomController::class, 'store']);
+
 Route::get('roomList', [RoomController::class, 'index']);
+
+Route::get('room/edit/{id}', [RoomController::class, 'edit']);
+
+Route::post('room/update', [RoomController::class, 'update']);
+
+Route::get('room/delete/{id}', [RoomController::class, 'destroy']);
 
 //location
 Route::get('location', [LocationController::class, 'create'])
@@ -40,6 +48,12 @@ Route::get('location', [LocationController::class, 'create'])
 Route::post('location', [LocationController::class, 'store']);
 
 Route::get('locationList', [LocationController::class, 'index']);
+
+Route::get('location/edit/{id}', [LocationController::class, 'edit']);
+
+Route::post('location/update', [LocationController::class, 'update']);
+
+Route::get('location/delete/{id}', [LocationController::class, 'destroy']);
 
 //building
 Route::get('building', [BuildingController::class, 'create'])
@@ -51,12 +65,23 @@ Route::get('buildingList', [BuildingController::class, 'index']);
 
 Route::get('building/edit/{id}', [BuildingController::class, 'edit']);
 
-Route::get('building/edit/{id}', [BuildingController::class, 'edit']);
+Route::post('building/update', [BuildingController::class, 'update']);
 
 Route::get('building/delete/{id}', [BuildingController::class, 'destroy']);
 
 //booking
-Route::post('building/update', [BuildingController::class, 'update']);
+Route::get('booking', [BookingController::class, 'create'])
+                ->name('booking');
+
+Route::post('booking', [BookingController::class, 'store']);
+
+Route::get('bookingList', [BookingController::class, 'index']);
+
+Route::get('booking/edit/{id}', [BookingController::class, 'edit']);
+
+Route::post('booking/update', [BookingController::class, 'update']);
+
+Route::get('booking/delete/{id}', [BookingController::class, 'destroy']);
 
 //calendar
 Route::get('calendar', [CalendarController::class, 'create']);

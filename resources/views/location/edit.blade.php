@@ -37,46 +37,24 @@
             <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Tambah Lokasi</h4>
+                        <h4 class="card-title">Kemaskini Lokasi</h4>
                     </div>
                     <div class="card-body">
-                        <form class="form form-vertical" action="{{ route('location') }}" method="POST">
+                        <form class="form form-vertical" action="{{ Request::root()}}/location/update" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="first-name-vertical">Nama Lokasi</label>
-                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Lokasi" />
+                                        <input type="text" id="first-name-vertical" class="form-control" name="name" placeholder="Nama Lokasi" value="{{$location->name}}" />
                                     </div>
                                 </div>
-                                <div class="col-12">
-<!--                                     <div class="mb-1">
-                                        <label class="form-label" for="first-name-vertical">Status</label>
-                                        <div class="row">
-                                        <div class="col-12">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="demo-inline-spacing">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="status" id="inlineRadio1" value="option1" checked />
-                                                            <label class="form-check-label" for="inlineRadio1">Aktif</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="status" id="inlineRadio2" value="option2" />
-                                                            <label class="form-check-label" for="inlineRadio2">Tidak Aktif</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>  -->      
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary me-1">Simpan</button>
                                     <button type="reset" class="btn btn-outline-secondary">Padam</button>
                                 </div>
-                                </div>
                             </div>
+                            <input type="hidden" name="location_id" value="{{$id}}">
                         </form>
                     </div>
                 </div>
@@ -85,7 +63,7 @@
     </section>
 </div>
 @endsection
-   
-@section('customeJS')
+
+@section('customJS')
 
 @endsection

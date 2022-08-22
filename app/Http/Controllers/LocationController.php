@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Location;
+use Illuminate\Support\Facades\DB;
 
 class LocationController extends Controller
 {
@@ -14,7 +15,9 @@ class LocationController extends Controller
      */
     public function index()
     {
-        return view('location.index');
+        $model = Location::all();
+ 
+        return view('location.index', ['locations' => $model]);
     }
 
     /**
@@ -35,7 +38,13 @@ class LocationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $name = $request->input('name');
+        $model = new Location;
+        $model->name=$name;
+        $model->delete_id=0;
+        $model->flag=0;
+        $model->save();
+        return redirect()->action([LocationController::class, 'index']);
     }
 
     /**
@@ -58,7 +67,11 @@ class LocationController extends Controller
      */
     public function edit($id)
     {
-        //
+        $model = Location::find($id);
+        return view('location.edit', [
+            'id' => $id,
+            'location' => $model
+        ]);
     }
 
     /**
@@ -68,9 +81,19 @@ class LocationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        // $model = Location::find($request->input('building_id'));
+
+        $model = Location::where('id',$request->input('location_id'))->first();
+ 
+        $name = $request->input('name');
+
+        $model->name = $name ;
+         
+        $model->save();
+
+        return redirect()->action([LocationController::class, 'index']);
     }
 
     /**
@@ -81,6 +104,8 @@ class LocationController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $model = Location::where('id',$id)->delete();
+ 
+        return redirect()->action([LocationController::class, 'index']);
     }
 }
